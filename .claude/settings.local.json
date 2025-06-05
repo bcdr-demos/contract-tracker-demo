@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__coder__coder_report_task"
+    ],
+    "deny": []
+  }
+}
