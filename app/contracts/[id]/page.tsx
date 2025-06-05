@@ -10,7 +10,8 @@ export default function ContractDetail() {
   const router = useRouter();
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
   
-  const contract = getContractById(id);
+  // Ensure id is a string before calling getContractById
+  const contract = id ? getContractById(id) : undefined;
   
   if (!contract) {
     return (
